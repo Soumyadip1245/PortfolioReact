@@ -1,0 +1,121 @@
+.contactcontainer{
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr); */
+    gap: 1.5rem;
+}
+.contactheader{
+    /* background-color: teal; */
+    grid-column: 1/-1;
+    padding: 1.5rem;
+}
+.contactheader h1{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.contactleft{
+    /* background-color: orange; */
+    padding: 1.5rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.contactform{
+    /* background-color: brown; */
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 2rem;
+}
+.contactform form{
+    background-color: var(--color-lightblue);
+    border-radius: 2rem;
+    padding: 2rem;
+    
+}
+.contactform input[type=text]{
+    display: block;
+    background-color: white;
+    width:80%;
+    border: 2px solid #aaa;
+    border-radius:4rem;
+    margin-left: auto;
+    margin-right: auto;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .contactform input[type=text]#message{
+    display: block;
+    height: 25rem;
+  }
+.contactform input[type=text]:focus{
+    border-color: var(--color-darkblue);
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
+  .contactform button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 4rem 1rem 4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: var(--color-darkblue);
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+  }
+  .contactform button:hover{
+    background-color: white;
+    color: black;
+  }
+  @media  screen and (max-width: 1270px) {
+    .contactform input[type=text]{
+        border-radius: 0.7rem;
+        width: 100%;
+
+    }
+    .contactform input[type=text]#message {
+        display: block;
+        height: 15rem;
+        border-radius: 1rem;
+        width: 100%;
+    }
+    .contactform{
+        width: 85%;
+    }
+    .contactform input[type=text]
+    {
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 622px) {
+    .contactform input[type=text]{
+        border-radius: 0.7rem;
+        width: 100%;
+
+    }
+    .contactform input[type=text]#message {
+        display: block;
+        height: 15rem;
+        border-radius: 1rem;
+        width: 100%;
+    }
+    .contactform{
+        width: 85%;
+    }
+    .contactform input[type=text]
+    {
+        width: 100%;
+    }
+}

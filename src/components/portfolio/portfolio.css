@@ -1,0 +1,91 @@
+main{
+    margin-top: 1.7rem;
+}
+.portfoliocontainer{
+    display: grid;
+    gap: 1.5rem;
+}
+.portfolioheader{
+    /* background-color: teal; */
+    padding: 1.5rem;
+}
+.portfolioheader h1{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.portfolioprojects{
+    /* background-color: tomato; */
+    padding: 1.5rem;
+}
+.projectgrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.projectgrid .wgrid1{
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-lightblue);
+    border-radius: 1rem;
+}
+.wgrid1 img{
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+}
+.wgrid1 a{
+    background-color: var(--color-darkblue);
+    padding: 0.8rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+.wgrid1 a:hover{
+    background-color: white;
+    color: black;
+}
+.wgrid1 h4{
+    background: transparent;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+@media  screen and (max-width: 1270px) {
+    .projectgrid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .wgrid1 a{
+        background-color: var(--color-darkblue);
+        padding: 0.8rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        margin-right: 0.5rem;
+    }
+}
+@media  screen and (max-width: 622px) {
+    .projectgrid{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 400px){
+    .wgrid1 a{
+        background-color: var(--color-darkblue);
+        padding: 0.8rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        margin-right: 0.5rem;
+    }
+}

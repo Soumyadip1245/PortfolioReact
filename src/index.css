@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-darkblue);
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+button{
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
+}
+.light-theme{
+  --color-darkblue: #271661;
+  --color-lightblue: #6f87ff;
+  --color-yellow: #ffd130;
+}
+.dark-theme{
+  --color-darkblue: black;
+  --color-lightblue: #6f87ff;
+  --color-yellow: #ffd130;
+}
+
+
+
+

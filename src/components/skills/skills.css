@@ -1,0 +1,129 @@
+.skillscontainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.skillsheader{
+    /* background-color: teal; */
+    grid-column: 1/-1;
+    padding: 1.5rem;
+}
+.skillsheader h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+
+}
+.skillsfrontend{
+    /* background-color: orange; */
+    padding: 1.5rem;
+}
+.skillsfrontend h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+.skillscard{
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--color-lightblue);
+    border-radius: 1.5rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.skillscard p{
+    text-align: left;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+.scontainer {
+  margin: 2rem;
+  width: 90%;
+  background-color: #ddd;
+  border-radius: 30px;
+  line-height: 10%;
+}
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  margin:10px 0 20px 0;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.skills > span{
+    margin-right:20px;
+    font-weight: 800;
+    background-color: transparent;
+    font-size: 0.8rem;
+    /* color: #202124; */
+    font-family: 'Montserrat', sans-serif;
+
+}
+.html {
+    width: 85%; 
+    background-color: var(--color-yellow);
+}
+.css{
+    width: 80%;
+    background-color: var(--color-yellow);
+}
+.bootstrap{
+    width: 70%;
+    background-color: var(--color-yellow);
+}
+.reactjs{
+    width: 50%;
+    background-color: var(--color-yellow);
+}
+.java{
+    width: 88%;
+    background-color: var(--color-yellow);
+}
+.c{
+    width: 80%;
+    background-color: var(--color-yellow);
+}
+.cplus{
+    width: 85%;
+    background-color: var(--color-yellow);
+}
+.jee{
+    width: 85%;
+    background-color: var(--color-yellow);
+}
+.spring{
+    width: 88%;
+    background-color: var(--color-yellow);
+}
+.mysql{
+    width: 75%;
+    background-color: var(--color-yellow);
+}
+.skillsbackend{
+    /* background-color: tomato; */
+    padding: 1.5rem;
+}
+.skillsbackend h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+@media  screen and (max-width: 1270px) {
+    .skillscontainer{
+        grid-template-columns: 1fr;
+    }
+}
+@media  screen and (max-width: 622px) {
+    .scontainer{
+        margin: 0rem;
+    }
+}
