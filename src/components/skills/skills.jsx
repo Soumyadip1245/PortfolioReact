@@ -1,68 +1,46 @@
 import React from 'react'
 import './skills.css'
 const skills = () => {
+  var data = [
+    {
+      img: "https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png"
+    },
+    {
+      img: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/21_Angular_logo_logos-1024.png"
+    },
+    {
+      img: "https://cdn4.iconfinder.com/data/icons/logos-3/512/mongodb-2-1024.png"
+    },
+    {
+      img: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png"
+    }, {
+      img: "https://i.imgur.com/AchNR7I.png"
+    }, {
+      img: "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png"
+    },
+    {
+      img: "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-1024.png"
+    }, {
+      img: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png"
+    },
+    { img: "https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/java-512.png" }
+  ]
   return (
     <section2 id="skills">
-  <div className="skillscontainer">
-    <div className="skillsheader">
-      <h1>Skills</h1>
-    </div>
-    <div className="skillsfrontend">
-      <h1>Frontend</h1>
-      <div className="skillscard">
-        <p>Html</p>
-        <div className="scontainer">
-          <div className="skills html"><span>85%</span></div>
-        </div>
-        <p>Css</p>
-        <div className="scontainer">
-          <div className="skills css"><span>80%</span></div>
-        </div>
-        <p>Bootstrap</p>
-        <div className="scontainer">
-          <div className="skills bootstrap"><span>70%</span></div>
-        </div>
-        <p>Reactjs</p>
-        <div className="scontainer">
-          <div className="skills reactjs"><span>50%</span></div>
+      <div className="skillscontainer">
+        <div className="skillsheader">
+          <h1>Skills</h1>
+          <div className="main">
+            {data.map((curr) => {
+              return <div className="skill">
+                <img id="skillimage" src={curr.img} />
+              </div>
+            })}
+
+          </div>
         </div>
       </div>
-    </div>
-    <div className="skillsbackend">
-      <h1>Backend</h1>
-      <div className="skillscard">
-        <p>Java</p>
-        <div className="scontainer">
-          <div className="skills java"><span>88%</span></div>
-        </div>
-        <p>C</p>
-        <div className="scontainer">
-          <div className="skills c"><span>80%</span></div>
-        </div>
-        <p>C++</p>
-        <div className="scontainer">
-          <div className="skills cplus"><span>85%</span></div>
-        </div>
-        <p> Java Enterprise Edition</p>
-        <div className="scontainer">
-          <div className="skills jee"><span>85%</span></div>
-        </div>
-        <p> Spring Framework</p>
-        <div className="scontainer">
-          <div className="skills spring"><span>88%</span></div>
-        </div>
-        <p> MySQL</p>
-        <div className="scontainer">
-          <div className="skills mysql"><span>75%</span></div>
-        </div>
-        <p> Java Enterprise Edition</p>
-        <div className="scontainer">
-          <div className="skills jee"><span>85%</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section2>
+    </section2>
   )
 }
 

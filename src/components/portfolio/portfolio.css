@@ -1,39 +1,44 @@
-main{
+main {
     margin-top: 1.7rem;
 }
-.portfoliocontainer{
+
+.portfoliocontainer {
     display: grid;
     gap: 1.5rem;
 }
-.portfolioheader{
+
+.portfolioheader {
     /* background-color: teal; */
     padding: 1.5rem;
 }
-.portfolioheader h1{
+
+.portfolioheader h1 {
     color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
-.portfolioprojects{
+
+.portfolioprojects {
     /* background-color: tomato; */
     padding: 1.5rem;
 }
-.projectgrid{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1rem;
+
+.projectgrid {
+    display: flex;
+    justify-content: space-evenly;
 }
-.projectgrid .wgrid1{
+
+.projectgrid .wgrid1 {
     text-align: center;
-    padding: 1.5rem;
     color: white;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--color-lightblue);
     border-radius: 1rem;
 }
-.wgrid1 img{
+
+.wgrid1 img {
     width: 85%;
     display: block;
     margin-left: auto;
@@ -41,7 +46,8 @@ main{
     border-radius: 1rem;
     margin-bottom: 4rem;
 }
-.wgrid1 a{
+
+.wgrid1 a {
     background-color: var(--color-darkblue);
     padding: 0.8rem;
     color: white;
@@ -50,20 +56,25 @@ main{
     margin-top: 2rem;
     margin-right: 1rem;
 }
-.wgrid1 a:hover{
+
+.wgrid1 a:hover {
     background-color: white;
     color: black;
 }
-.wgrid1 h4{
+
+.wgrid1 h4 {
     background: transparent;
     margin-top: -2rem;
     margin-bottom: 2rem;
 }
-@media  screen and (max-width: 1270px) {
-    .projectgrid{
+
+@media screen and (max-width: 1270px) {
+    .projectgrid {
+        gap: 1rem;
         grid-template-columns: 1fr 1fr;
     }
-    .wgrid1 a{
+
+    .wgrid1 a {
         background-color: var(--color-darkblue);
         padding: 0.8rem;
         color: white;
@@ -73,13 +84,28 @@ main{
         margin-right: 0.5rem;
     }
 }
-@media  screen and (max-width: 622px) {
-    .projectgrid{
-        grid-template-columns: 1fr;
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+@media screen and (max-width: 622px) {
+    .projectgrid {
+        flex-flow: column;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
     }
 }
-@media screen and (max-width: 400px){
-    .wgrid1 a{
+
+/* 
+*/
+
+@media screen and (max-width: 400px) {
+    .wgrid1 a {
         background-color: var(--color-darkblue);
         padding: 0.8rem;
         color: white;

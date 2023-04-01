@@ -1,32 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   background-color: var(--color-darkblue);
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
+
+body {
+  background-color: var(--color-darkblue);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+::-webkit-scrollbar {
   display: none;
 }
-button{
+
+button {
   cursor: pointer;
 }
-a{
+
+a {
   cursor: pointer;
 }
-.light-theme{
+
+.light-theme {
   --color-darkblue: #271661;
   --color-lightblue: #6f87ff;
   --color-yellow: #ffd130;
 }
-.dark-theme{
+
+.dark-theme {
   --color-darkblue: black;
   --color-lightblue: #6f87ff;
   --color-yellow: #ffd130;
 }
-
-
-
-
